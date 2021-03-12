@@ -10,6 +10,7 @@ main = Blueprint("main",__name__)
 def home():
     posts = Post.query.all()
     return render_template("index.html", posts=posts, title="Home page")
+    return quote()
 
 
 @main.route("/about")
