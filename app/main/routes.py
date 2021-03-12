@@ -22,6 +22,6 @@ def quote():
             2: {'author':'Ngugidavid2', 'title':'authords2'}}
     res=key, val=random.choice(list(dict1.items()))
     author=str(val['author'])
-    title=str(val['title'])
-    return render_template("quotes.html", author=author, title=title)
+    title1=str(val['title'])
+    return render_template("quotes.html", author="author", title1=title1)
     
